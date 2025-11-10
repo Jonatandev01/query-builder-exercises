@@ -1,32 +1,60 @@
 # Guía de Ejercicios - Query Builder & Eloquent (Proyecto ligero)
 
-Este proyecto contiene una **implementación ligera** de los ejercicios de Query Builder y Eloquent (Laravel-style) usando **Illuminate Database** (Eloquent) y **SQLite**, para que puedas ejecutar las consultas rápidamente sin crear un proyecto Laravel completo.
+**Autor:** Jonatan Elías Guevara Chicas  
+**Curso:** Full Stack Junior – Kodigo  
+**Año:** 2025  
 
-## Requisitos
-- PHP 8.0+
+---
+
+## 🧩 Descripción del Proyecto
+
+Este proyecto presenta una **implementación ligera** de los ejercicios de **Query Builder y Eloquent ORM (Laravel-style)** utilizando el paquete `illuminate/database` (Eloquent) y una base de datos **SQLite**, para ejecutar las consultas sin necesidad de un proyecto Laravel completo.
+
+El objetivo es demostrar el uso de consultas SQL programáticas, manejo de relaciones entre tablas y optimización de datos mediante el ORM Eloquent, cumpliendo los criterios de la **Guía de Ejercicios Query Builder**.
+
+---
+
+## ⚙️ Requisitos
+
+- PHP 8.0 o superior  
 - Composer
 
-## Pasos para ejecutar (rápido)
-1. Descomprime el ZIP.
-2. Abre una terminal en la carpeta del proyecto.
-3. Ejecuta:
+---
+
+## 🚀 Pasos para ejecutar el proyecto
+
+1. **Descomprime** el proyecto o clona el repositorio.  
+2. Abre una **terminal** en la carpeta del proyecto.  
+3. Instala dependencias:
    ```bash
    composer install
    ```
-4. Crea la base de datos SQLite y ejecuta migraciones y seeders:
+4. Ejecuta las migraciones y carga de datos de ejemplo:
    ```bash
    php migrate.php
    ```
-   Esto creará `database/database.sqlite` y añadirá datos de ejemplo (5 usuarios y varios pedidos).
+   Esto creará el archivo `database/database.sqlite` con tablas y registros de ejemplo (usuarios y pedidos).
 
-5. Ejecuta las consultas y verás los resultados en la terminal:
+5. Ejecuta los ejercicios:
    ```bash
    php run.php
    ```
+   Verás los resultados de cada consulta (como `where`, `between`, `sum`, `orderBy`, `with`, `groupBy`) directamente en la terminal.
 
-## Archivos importantes
-- `migrate.php` : Ejecuta las migraciones y seeders.
-- `run.php` : Ejecuta cada uno de los ejercicios y muestra la salida.
-- `src/Models/User.php`, `src/Models/Order.php` : Modelos Eloquent.
-- `src/bootstrap.php` : Conexión a la base de datos y configuración Eloquent.
+---
 
+## 🧠 Consultas Implementadas
+
+1. Contar registros en `users`.  
+2. Pedidos del usuario con ID = 2.  
+3. Pedidos con información del usuario (relación `belongsTo`).  
+4. Pedidos con `total` entre 100 y 250.  
+5. Usuarios cuyos nombres comienzan con “R”.  
+6. Conteo de pedidos del usuario con ID = 5.  
+7. Pedidos ordenados descendentemente por total.  
+8. Suma total del campo `total` de todos los pedidos.  
+9. Pedido más económico con información del usuario.  
+10. Agrupación de pedidos por usuario (relación `hasMany`).  
+11. Ejercicio adicional: Totales de pedidos agrupados por usuario.
+
+**© 2025 - Kodigo | Proyecto académico realizado por Jonatan Elías Guevara Chicas**
