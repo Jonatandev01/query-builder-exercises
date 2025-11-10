@@ -1,0 +1,17 @@
+{
+  "name": "kodigo/query-builder-exercises",
+  "description": "Ejercicios Query Builder & Eloquent (Laravel-style) - lightweight project using illuminate/database",
+  "require": {
+    "php": "^8.0",
+    "illuminate/database": "^10.0",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php run.php"
+  }
+}
