@@ -30,8 +30,3 @@ Este proyecto contiene una **implementación ligera** de los ejercicios de Query
 - `src/Models/User.php`, `src/Models/Order.php` : Modelos Eloquent.
 - `src/bootstrap.php` : Conexión a la base de datos y configuración Eloquent.
 
-## Notas
-- Este proyecto NO incluye un proyecto Laravel completo. Está diseñado para ser ligero y replicar el comportamiento de Eloquent/Query Builder para la actividad.
-- Si prefieres un proyecto Laravel completo, puedo generar instrucciones para convertir este código o ayudarte a integrarlo en un `laravel new` más adelante.
-
-¡Listo para usar!
